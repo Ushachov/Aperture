@@ -1,0 +1,72 @@
+.our-work{
+  padding: 113px 0 100px;
+  background: $darkBg;
+  @media(max-width: 768px){
+    padding: 75px 0;
+  }
+
+  &__container{
+    max-width: 1168px;
+    margin: 0 auto;
+  }
+
+  &__text{
+    margin-bottom: 42px;
+  }
+
+  .example{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    @media(max-width: 768px){
+      flex-direction: column;
+      img{
+        width: 100%;
+      }
+    }
+
+    &__item{
+      position: relative;
+      width: calc(50% - 8px);
+      margin-bottom: 16px;
+      @media(max-width: 768px){
+        width: 100%;
+      }
+    }
+
+
+
+    &__text{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding: 0 45px 30px 30px;
+      @media(max-width: 425px){
+        padding: 0 8px 15px;
+      }
+    }
+
+    &__title{
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: $lightColor;
+    }
+
+    &__description{
+      font-size: 14px;
+      line-height: 20px;
+      color: $silver;
+      margin-bottom:16px;
+      @media(max-width: 768px){
+        width: 100%;
+      }
+      @media(max-width: 425px){
+        line-height: 17px;
+      }
+    }
+
+  }
+
+}

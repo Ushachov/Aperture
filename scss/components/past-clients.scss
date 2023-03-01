@@ -1,0 +1,36 @@
+.past-clients{
+  background: $darkBg;
+  padding:  113px 0 140px;
+  @media(max-width: 768px){
+    padding: 75px 0;
+  }
+
+  &__text{
+    margin-bottom: 82px;
+  }
+
+  .clients{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    &-img-wrapper{
+      @media(max-width: 768px){
+        width: 100%;
+      }
+      img{
+        opacity: .8;
+        transition: .3s all ease;
+        cursor: pointer;
+        @media(max-width: 768px){
+          margin: 0 auto 70px;
+        }
+        &:hover{
+          opacity: 1;
+          -webkit-filter: drop-shadow(0 0 15px $lightBg);
+          filter: drop-shadow(0 0 15px $lightBg);
+        }
+      }
+    }
+  }
+}
