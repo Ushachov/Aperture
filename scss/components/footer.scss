@@ -151,6 +151,7 @@
     }
     .soc-net{
       display: flex;
+      align-items: center;
       @media(max-width: 425px){
         margin-top: 25px;
       }

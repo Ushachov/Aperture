@@ -775,6 +775,7 @@ select {
 }
 .footer__add-info .soc-net {
   display: flex;
+  align-items: center;
 }
 @media (max-width: 425px) {
   .footer__add-info .soc-net {
